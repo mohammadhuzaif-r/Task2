@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do list</title>
+    <style>
+      body{
+        background-image: url(https://images.pexels.com/photos/4215099/pexels-photo-4215099.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+        background-size: cover;
+
+      }
+      table {
+        border-collapse: collapse;
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 5%;
+        background-image: none;
+        /* border-style: double; */
+      }
+  
+      th,tr{
+        
+        border: 1px solid black;
+        text-align: center;
+        padding: 15px;
+      }
+      #h{
+        margin-top: 3%;
+      }
+  
+      
+
+    </style>
+    <script>
+      function s1(){
+        var l1=f1.l1.value;
+        var l2=f1.l2.value;
+        var l3=f1.l3.value;
+        var l4=f1.l4.value;
+        var l5=f1.l5.value;
+        var l6=f1.l6.value;
+        var l7=f1.l7.value;
+        var l8=f1.l8.value;
+
+        document.write(l1);
+        document.write("<br>");
+        document.write(l2);
+        document.write("<br>");
+        document.write(l3);
+        document.write("<br>");
+        document.write(l4);
+        document.write("<br>");
+        document.write(l5);
+        document.write("<br>");
+        document.write(l6);
+        document.write("<br>");
+        document.write(l7);
+        document.write("<br>");
+        document.write(l8);
+
+      }
+      function s2(){
+
+
+      }
+     
+    </script>
+
+</head>
+<body>
+  <center><h1 id="h">TO-DO LIST</h1></center>
+    <table border="2">
+        <form name="f1">
+            <tr>
+              <th><input type="text" name="l1" placeholder="LIST 1"></th>
+              <th><input type="button" type="search" value="save" onclick="s2()" >
+                  <input type="reset" value="delete" ></th>
+            </tr>
+            <tr>
+              <th><input type="text" name="l2" placeholder="LIST 2"></th>
+              <th><input type="button" value="save" >
+                <input type="reset" value="delete" ></th>
+            </tr>
+            <tr>
+              <th><input type="text" name="l3" placeholder="LIST 3"></th>
+              <th><input type="button" value="save" >
+                <input type="reset" value="delete" ></th>
+            </tr>
+            <tr>
+              <th><input type="text" name="l4" placeholder="LIST 4"></th>
+              <th><input type="button" value="save" >
+                <input type="reset" value="delete" ></th>
+            </tr>  
+            <tr>
+              <th><input type="text" name="l5" placeholder="LIST 5"></th>
+              <th><input type="button" value="save" >
+                <input type="reset" value="delete" ></th>
+            </tr>
+            <tr>
+              <th><input type="text" name="l6" placeholder="LIST 6"></th>
+              <th><input type="button" value="save" >
+                <input type="reset" value="delete" ></th>
+            </tr> 
+            <tr>
+              <th><input type="text" name="l7" placeholder="LIST 7"></th>
+              <th><input type="button" value="save" >
+                <input type="reset" value="delete" ></th>
+            </tr> 
+            <tr>
+              <th><input type="text" name="l8" placeholder="LIST 8"></th>
+              <th><input type="button" value="save" >
+                <input type="reset" value="delete" ></th>
+            </tr>
+            
+       
+
+        </form>
+        <tr>
+          <th></th>
+          <th><input type="button" value="submit" onclick="s1()"></th>
+        </tr>
+    </table>
+</body>
+</html>
